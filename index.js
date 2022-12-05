@@ -9,8 +9,6 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-// bobshopuser
-// V0pBHvh3HzUQHetw
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.bz2bbta.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
